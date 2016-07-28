@@ -11,8 +11,8 @@ git clone git@github.com:bigstepinc/hdfs-config-for-datalake.git
 #log into kerberos
 kinit kxxx@bigstep.io
 
-
+#change the default hadoop conf dir. Note that this might affect the regular behaviour of the hadoop environment.
 export HADOOP_CONF_DIR=/root/hdfs-config-for-datalake
-#issue commands that interact with the DataLake cluster.
 
+#issue commands that interact with the DataLake cluster.
 hadoop ls -fs hdfs://namenodes-data-lake01-uk-reading.bigstep.io/data_lake/dlxxx/
